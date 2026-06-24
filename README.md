@@ -15,6 +15,7 @@ The solution is designed using a fully serverless architecture and leverages Ama
 https://d5xvyccc3g2ra.cloudfront.net/
 
 ## QR Code
+![Portfolio QR Code](datas/EiSandarWin-QR-code.jpg)
 
 
 ## Architecture
