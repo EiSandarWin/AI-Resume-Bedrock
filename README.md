@@ -4,12 +4,17 @@
 
 AI Resume Assistant is a serverless portfolio application built on AWS that allows recruiters to:
 
-- View my online resume and portfolio
+- View my online resume and portfolio by scanning QR Code
 - Download my English and Japanese CV
 - Interact with an AI-powered chatbot
 - Ask questions about my skills, experience, certifications, and projects
 
 The solution is designed using a fully serverless architecture and leverages Amazon Bedrock for Generative AI capabilities.
+
+## Live Demo
+https://d5xvyccc3g2ra.cloudfront.net/
+
+## QR Code
 
 
 ## Architecture
