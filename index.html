@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ei Sandar Win AI Career Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Ei Sandar Win</h1>
+
+<h3>QA Engineer | Test Automation Engineer | AWS Cloud & AI Learner</h3>
+
+<hr>
+<h2>About Me</h2>
+<p>6+ years of experience in Software Testing,Quality Assurance, Web Development,and Financial System Support.</p>
+<hr>
+<h2>Download Resume with Eng Version</h2>
+<a href="datas/english_Ei.pdf" download>Download English CV (PDF)</a>
+<br><br>
+<h2>Download Resume with Japanese rirekishyo</h2>
+<a href="datas/rirekishyo_Ei.pdf" download>Download Japanese Resume (PDF)</a>
+<br><br>
+<h2>Download Resume with Japanese shokumurirekishyo</h2>
+<a href="datas/shokumurirekishyo_Ei.pdf" download>Download Japanese Resume (PDF)</a>
+<hr>
+<h2>AI Recruiter Assistant</h2>
+<input type="text" id="question" placeholder="Ask about my experience...">
+<br><br>
+<button onclick="ask()">Ask</button>
+<br><br>
+<div id="result"></div>
+<script>
+async function ask() {
+  const question = document.getElementById("question").value;
+
+  const res = await fetch("https://1r9c6gf8e7.execute-api.ap-northeast-1.amazonaws.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ question: question })
+  });
+
+  const data = await res.json();
+
+  document.getElementById("result").innerText = data.answer;
+}
+</script>
+
+</body>
+</html>
